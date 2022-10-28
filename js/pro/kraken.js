@@ -466,11 +466,11 @@ module.exports = class kraken extends krakenRest {
                 const amountLength = amountParts[1].length - 0;
                 const payloadArray = [];
                 if (c !== undefined) {
-                    for (let i = 0; i < 10; i++) {
+                    for (let i = 0; i < storedAsks.length; i++) {
                         const formatted = this.formatNumber (storedAsks[i][0], priceLength) + this.formatNumber (storedAsks[i][1], amountLength);
                         payloadArray.push (formatted);
                     }
-                    for (let i = 0; i < 10; i++) {
+                    for (let i = 0; i < storedBids.length; i++) {
                         const formatted = this.formatNumber (storedBids[i][0], priceLength) + this.formatNumber (storedBids[i][1], amountLength);
                         payloadArray.push (formatted);
                     }
