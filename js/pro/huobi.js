@@ -85,7 +85,7 @@ module.exports = class huobi extends huobiRest {
                 'tradesLimit': 1000,
                 'OHLCVLimit': 1000,
                 'api': 'api', // or api-aws for clients hosted on AWS
-                'maxOrderBookSyncAttempts': 3,
+                'maxOrderBookSyncAttempts': 60,
                 'ws': {
                     'gunzip': true,
                 },

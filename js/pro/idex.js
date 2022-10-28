@@ -34,8 +34,8 @@ module.exports = class idex extends idexRest {
                 'watchOrderBookLimit': 1000, // default limit
                 'orderBookSubscriptions': {},
                 'token': undefined,
-                'fetchOrderBookSnapshotMaxAttempts': 10,
-                'fetchOrderBookSnapshotMaxDelay': 10000, // throw if there are no orders in 10 seconds
+                'fetchOrderBookSnapshotMaxAttempts': 60,
+                'fetchOrderBookSnapshotMaxDelay': 60000, // throw if there are no orders in 60 seconds
             },
         });
     }
